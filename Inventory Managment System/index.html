@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inventory System</title>
+</head>
+<body>
+        <div id="main-container">
+
+            <div id="main-body">
+
+                <div id="upper-body">
+                    <div id="title-section">
+                        <h1>Inventory Managment System</h1>
+                    </div>
+                    <div id="btn-section">
+                        <button id="add-btn" >Add</button>
+                        <button id="update-btn" >Update</button>
+                        <button id="delete-btn" >Delete</button>
+                    </div>
+                </div>
+                
+    
+                <div id="lower-body">
+    
+                    <table id="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Category</th>
+                            <th>Cost</th>
+                        </tr>
+
+    
+
+                        
+    
+    
+    
+                    </table>
+
+                    <div id="total-section">
+                        <div>Total:</div>
+                        <div id="total-cost" >360200</div>
+                    </div>
+    
+                </div>
+                
+                
+            </div>
+
+            
+
+        </div>
+
+        <div class="add popup">
+            
+            <div class="header" >
+                <h1>Add item</h1>
+            </div>
+            
+            <div class="form">
+                <form>
+                    <label >Item Name</label>
+                    <input id="name-ipt" type="text">
+                    <label >Price</label>
+                    <input id="price-ipt" type="text">
+                    <label >Quantity</label>
+                    <input id="quan-ipt" type="text">
+                    <label >Category</label>
+                    <input id="ctg-ipt" type="text">
+                </form>    
+            </div>
+
+            <div class="footer">
+                <button class="cancel" >Cancel</button>
+                <button id="add-submit" >Submit</button>
+            </div>
+
+        </div>
+
+
+        <div class="update popup">
+            
+            <div class="header" >
+                <h1>Update item</h1>
+            </div>
+
+            <div class="id-section" >
+                <p>Enter Id which you want to update</p>
+                <input id="update-id-ipt" type="text">
+            </div>
+
+            <div class="footer">
+                <button class="cancel" >Cancel</button>
+                <button id="update-detail-submit" >Submit</button>
+            </div>
+
+        </div>
+
+
+        <div class="update-detail popup">
+            
+            <div class="header" >
+                <h1>Update item</h1>
+            </div>
+            
+            <div class="form">
+                <form>
+                    <label >Item Name</label>
+                    <input id="name-ipt-2" type="text">
+                    <label >Price</label>
+                    <input id="price-ipt-2" type="text">
+                    <label >Quantity</label>
+                    <input id="quan-ipt-2" type="text">
+                    <label >Category</label>
+                    <input id="ctg-ipt-2" type="text">
+                </form>    
+            </div>
+
+            <div class="footer">
+                <button class="cancel" >Cancel</button>
+                <button id="update-submit" >Submit</button>
+            </div>
+
+        </div>
+
+        <div class="delete popup">
+            
+            <div class="header" >
+                <h1>Delete item</h1>
+            </div>
+
+            <div class="id-section" >
+                <p>Enter Id which you want to Delete</p>
+                <input id="delete-id-ipt" type="text">
+            </div>
+
+            <div class="footer">
+                <button class="cancel" >Cancel</button>
+                <button id="delete-submit" >Submit</button>
+            </div>
+
+        </div>
+
+        <div id="overlay"></div>
+
+        <script src="script.js"></script>
+</body>
+</html>
